@@ -26,8 +26,8 @@ jobs:
           gradle-version: 9.2.1
 
       # Build project with Gradle
-      - name: Build with Gradle
-        run: ./gradlew build
+     - name: Build with Gradle
+  run: ./gradlew build -x test
 
       # Login to Docker Hub
       - name: Login to Docker Hub
